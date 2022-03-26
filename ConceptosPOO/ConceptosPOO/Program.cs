@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using ConceptosPOO;
+﻿using ConceptosPOO;
 
 Console.WriteLine("POO Concepts");
 Console.WriteLine("============");
