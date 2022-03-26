@@ -8,7 +8,7 @@ Console.WriteLine("============");
 try
 {
     Console.WriteLine(new Date(2024, 2, 29)); // Biciesto Correcto
-    Console.WriteLine(new Date(2022, 2, 29)); // Biciesto Incorrecto
+    //Console.WriteLine(new Date(2022, 2, 29)); // Biciesto Incorrecto
     Console.WriteLine(new Date(2022, 12, 7)); // 2022 / 12 / 07
     Console.WriteLine(new Date(1974, 9, 23)); // 1974 / 09 / 23
     //Console.WriteLine(new Date(1985, 18, 45)); // Invalid month
