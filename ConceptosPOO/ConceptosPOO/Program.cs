@@ -2,20 +2,30 @@
 
 Console.WriteLine("POO Concepts");
 Console.WriteLine("============");
-// Date date1 = new Date(2022, 2, 11);
+Employee employee1 = new SalaryEmployee()
+{
+    Id = 1010,
+    FirstName = "Sandra",
+    lastName = "Morales",
+    BirthDate = new Date(1990, 5, 23),
+    HiringDate = new Date(2022, 1, 15),
+    IsActive = true,
+    Salary = 1815453.45M
+};
 
-try
+Console.WriteLine(employee1);
+
+Employee employee2 = new CommissionEmployee()
 {
-    Console.WriteLine(new Date(2024, 2, 29)); // Biciesto Correcto
-    //Console.WriteLine(new Date(2022, 2, 29)); // Biciesto Incorrecto
-    Console.WriteLine(new Date(2022, 12, 7)); // 2022 / 12 / 07
-    Console.WriteLine(new Date(1974, 9, 23)); // 1974 / 09 / 23
-    //Console.WriteLine(new Date(1985, 18, 45)); // Invalid month
-    // Console.WriteLine(new Date(1985, 11, 45));   // Invalid day
-    Console.WriteLine(new Date(1974, 11, 23)); // 1974 / 09 / 23
-}
-catch (Exception error)
-{
-    Console.WriteLine(error.Message);
-}
+    Id = 2020,
+    FirstName = "Patricia",
+    lastName = "Perez",
+    BirthDate = new Date(1995, 5, 23),
+    HiringDate = new Date(2022, 1, 15),
+    IsActive = true,
+    Sales = 320000000M, // Es una constante de tipo Mnoey, por eso se pone M
+    CommissionPercentaje = 0.03F, //Es una constante de tipo float, por eso se pone F. Las unicas constantes que no hay q ponerle nada son double
+};
+
+Console.WriteLine(employee2);
 

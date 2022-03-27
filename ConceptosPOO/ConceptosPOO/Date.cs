@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConceptosPOO
+﻿namespace ConceptosPOO
 {
     public class Date
     {
@@ -16,7 +10,7 @@ namespace ConceptosPOO
         {
             _year = year;
             _month = CheckMonth(month);
-            _day = CheckDay(year, month,day);
+            _day = CheckDay(year, month, day);
         }
 
         private int CheckDay(int year, int month, int day)
@@ -76,7 +70,7 @@ namespace ConceptosPOO
             {
                 return month;
             }
-            throw new MonthException($"Invalid month:{month}" );
+            throw new MonthException($"Invalid month:{month}");
         }
 
         public override string ToString()
